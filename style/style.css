@@ -71,14 +71,39 @@ div.c {
        
 } 
 
+.gallery-container {
+     display:flex;
+     flex-wrap: wrap;
+     justify-content:space-evenly;
+     gap: 3vw;
+     padding: 002vw;
 
-div.foto {
-     display: inline-block ; background-color: whitesmoke ; 
-     border: 1px solid black; text-align: center ; 
-     height: 200px ; width: 200px;
-     margin: auto;
 
 }
+.gallery-items {
+     height: 300px;
+     width: 340px;
+     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.404);
+     flex-grow: 1;
+          /*filter: grayscale(100%);*/
+     transition: transform .5s linear;
+
+}
+
+.gallery-items img { 
+     border: 1px solid black; text-align: center ; 
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+
+}
+
+.gallery-items:hover{
+     transform: scale(1.3);
+     filter: none(0.3);
+     color: whitesmoke;
+}
+
 div.video{
      display: inline-block ; background-color: whitesmoke ; 
      border: 1px solid black; text-align: center ; 
