@@ -18,9 +18,11 @@ body{
      
     
 
-h1#principal {
+header#principal {
+     text-align: center;
+     display:inline-block;
      color: white ;
-     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.596);
+     width: 80px; height: 80px;
 }
 
 nav.menu > a{text-decoration: none;}
@@ -95,6 +97,7 @@ div.c {
      height: 100%;
      width: 100%;
      object-fit: cover;
+     position: relative;
 
 }
 
