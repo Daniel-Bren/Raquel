@@ -1,38 +1,59 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
 
 :root{
      --cor1: #81fbb8;
      --cor2: #009899;
 
-
 }
+
+
 
 
 
 body{
      text-align: center;
-     background: linear-gradient(180deg, #81fbb8 10%, #009899 100%);
+     background: linear-gradient(to left, #81fbb8, #009899);
      font-family:'Abel', sans-serif;
-     font-size: 25px;
+     font-weight: bolder;
+     font-size: 20px;
 } 
      
     
 
 header#principal {
-     text-align: center;
-     display:inline-block;
+     font-family: 'Whisper';
+     display:inline;
      color: white ;
-     width: 80px; height: 80px;
+     width: 10px; height: 10px;
+     text-shadow: 3px 3px 3px  black;
+     font-size: 30px;
+     padding: none;
+     margin: auto;
 }
 
 nav.menu > a{text-decoration: none;}
 nav.menu > a:hover {text-decoration:none;}
 nav.menu {
      font-weight: bold;
-     margin: auto;
-     padding: 5px; margin: 15px;
+     padding: 5px; margin: 5px;
      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.479);
      border-radius: 10px; width:400px; display: inline-block;
+     transition-duration: 0.5;
+}
+
+nav.voltar > a{text-decoration: none;}
+nav.voltar > a:hover {text-decoration:none;}
+nav.voltar {
+     font-size: 20px;
+     font-weight: bold;
+     margin: auto;
+     padding: 1px; margin: 10px;
+     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.479);
+     border-radius: 10px; width:200px; display:block;
      transition-duration: 0.5;
 }
 
@@ -50,23 +71,36 @@ main.we {
 
 
 
-h4.textoinicial{
-     text-align:auto;
-}
+
 
 a{color: white; padding:10px;}
 a:visited {color: white;}
 a:hover {color:whitesmoke;text-decoration:solid;}
 
-textarea{border-radius: 30px;margin: auto;
+.textarea{
+     width: 500px; height: 500px;
+     background-color: white;
+     border-radius: 5px 5px 5px 5px; margin: auto;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.534);
+   
+}
+     h4.textoinicial{
+     text-align:justify;
+     margin: 10px 10px 30px 10px;
+     padding: 10px 5px 10px 5px;
+     }
 
-     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.534);}
+     .textarea:hover{
+          transform: scale(1.3);
+          filter: none(0.3);
+          color: black;
+     }
 
 
 
 div.c {
      display: inline-block; background-color: whitesmoke ; 
-     border: 4px solid white; text-align: center ; 
+     border: 4px solid whitesmoke; text-align: center ; 
      height:560px ; width: 370px;
      margin: 3px;
      padding: auto ;
@@ -74,6 +108,8 @@ div.c {
 } 
 
 .gallery-container {
+     border-radius: 5px;
+     background-color: white;
      display:flex;
      flex-wrap: wrap;
      justify-content:space-evenly;
@@ -120,11 +156,11 @@ div.video > iframe {
 
 
 footer.footer {
-     font-size: 15px;
+     font-size: 20px;
      color: white;
-     font-family: 'abel';
-     margin: 5 px;
-     padding:10px;
+     font-family: 'Whisper';
+     margin: 30px;
+     padding:30px;
 }
 
 
